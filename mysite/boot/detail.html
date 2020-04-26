@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+       <div class="col-md-8 text-center">
+           <article>
+           <h2>{{blog.title}}</h2>
+           <p class="lead">{{blog.excerpt}}</p>
+
+           <div class="text-right">
+           <span class="glyphicon glyphicon-eye-open">{{blog.views}}&nbsp;&nbsp;</span>
+           <!-- <span class="glyphicon glyphicon-thumbs-up">likes&nbsp;&nbsp;</span> -->
+           <!-- <span class="glyphicon glyphicon-bullhorn">comments&nbsp;&nbsp;</span> -->
+           </div>
+           </article>
+
+            
+           
+
+           
+       </div>
+       
+       <div class="col-md-2 text-left">
+           <!-- ![](../assets/case_3.jpg) -->
+           <h2>{{blog.toc}}</h2>
+           
+       </div>
+
+       
+{% endblock %}

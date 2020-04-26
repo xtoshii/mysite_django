@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+           
+           {% for blog in blogs %}
+
+
+           
+              <article >
+
+                <h2><a href="{{blog.id}}" target="_blank"> {{blog.title}}</a></h2>
+                <p class="lead">{{blog.excerpt|safe}}</p>
+
+                  <div class="text-right">
+                      <span class="glyphicon glyphicon-eye-open">{{blog.category)}},&nbsp;</span>
+                      <span class="glyphicon glyphicon-eye-open">{{blog.views}}&nbsp;&nbsp;</span>
+           <!-- <span class="glyphicon glyphicon-thumbs-up">likes&nbsp;&nbsp;</span> -->
+           <!-- <span class="glyphicon glyphicon-bullhorn">comments&nbsp;&nbsp;</span> -->
+                  </div>
+              </article>
+                    
+            <!-- </div> -->
+          {% endfor %}
+
+
+{% endblock %}
+           
+       </div>
+       
+       <div class="col-md-2 text-left">
+           <!-- ![](../assets/case_3.jpg) -->
+           <!-- <h2>{{blog.toc}}</h2> -->
+           
+       </div>
+        
+

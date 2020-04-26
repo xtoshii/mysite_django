@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+       <!-- <div class="col-md-8 text-left"> -->
+           <article class="text-left">
+           <h2>{{blog.title}}</h2>
+                <div class="text-right">
+                      <span class="glyphicon glyphicon-eye-open">{{blog.tags}},&nbsp;</span>
+                      <span class="glyphicon glyphicon-eye-open">{{blog.views}}&nbsp;&nbsp;</span>
+           <!-- <span class="glyphicon glyphicon-thumbs-up">likes&nbsp;&nbsp;</span> -->
+           <!-- <span class="glyphicon glyphicon-bullhorn">comments&nbsp;&nbsp;</span> -->
+                  </div>
+           <p class="lead">{{blog.body | safe}}
+
+           </p>
+
+<!--           <div class="text-right">-->
+<!--           <span class="glyphicon glyphicon-eye-open">{{blog.views}}&nbsp;&nbsp;</span>-->
+<!--           &lt;!&ndash; <span class="glyphicon glyphicon-thumbs-up">likes&nbsp;&nbsp;</span> &ndash;&gt;-->
+<!--           &lt;!&ndash; <span class="glyphicon glyphicon-bullhorn">comments&nbsp;&nbsp;</span> &ndash;&gt;-->
+<!--           </div>-->
+           </article>
+        <!-- </div> -->
+            
+<!-- </div> -->
+
+
+       
+{% endblock %}
+{% block toc %}
+ <!-- <div class="col-md-2 text-left"> -->
+           <!-- ![](../assets/case_3.jpg) -->
+           <h2>{{blog.toc | safe}}</h2>
+           
+       <!-- </div> -->
+{% endblock %}
